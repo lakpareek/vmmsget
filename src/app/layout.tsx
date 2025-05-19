@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
       >
         <div className="w-full overflow-y-auto max-w-[600px] border-amber-100 border-3 border-dotted flex flex-col items-center justify-center rounded-lg p-4 m-auto mt-10 h-sc">
           {children}
+          <Analytics />
         </div>
         
       </body>
