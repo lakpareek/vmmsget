@@ -1,4 +1,3 @@
-import { useState } from "react"
 
 export default function NameBox({userName, setUserName} : {userName: string, setUserName: (name: string) => void}) {
   return (
