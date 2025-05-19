@@ -27,7 +27,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="w-full overflow-y-auto max-w-[600px] border-amber-100 border-3 border-dotted flex flex-col items-center justify-center rounded-lg p-4 m-auto mt-10 h-sc">
+          {children}
+        </div>
+        
       </body>
     </html>
   );
